@@ -12,7 +12,7 @@ class PluginQuickStart extends Plugin
     public function build(ContainerBuilder $container): void
     {
         parent::build($container);
-        $loader = new XmlFileLoader($container, new FileLocator(__DIR__));
-        $loader->load('DependencyInjection/services.xml');
+        $loader = new XmlFileLoader($container, new FileLocator(__DIR__ . '/DependencyInjection/'));
+        $loader->load('services.xml');
     }
 }
