@@ -9,6 +9,9 @@
             "name": "shopware AG"
         }
     ],
+    "require": {
+        "shopware/platform": "dev-master"
+    },
     "extra": {
         "installer-name": "PluginQuickStart",
         "label": {
