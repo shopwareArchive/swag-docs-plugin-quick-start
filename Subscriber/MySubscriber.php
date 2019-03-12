@@ -2,6 +2,7 @@
 
 namespace PluginQuickStart\Subscriber;
 
+use Shopware\Core\Framework\DataAbstractionLayer\Event\EntityLoadedEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 class MySubscriber implements EventSubscriberInterface
@@ -9,12 +10,13 @@ class MySubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return[
-            'example_event' => 'onExampleEvent'
+            'product.loaded' => 'onProductsLoaded'
         ];
     }
 
-    public function onExampleEvent(): void
+    public function onProductsLoaded(EntityLoadedEvent $event)
     {
-        // do something
+        // Do something
+        // E.g. work with the loaded entities: $event->getEntities()
     }
 }
