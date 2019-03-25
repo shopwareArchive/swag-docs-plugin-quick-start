@@ -2,6 +2,7 @@
 
 namespace PluginQuickStart\Subscriber;
 
+use Shopware\Core\Content\Product\ProductEvents;
 use Shopware\Core\Framework\DataAbstractionLayer\Event\EntityLoadedEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
@@ -10,7 +11,7 @@ class MySubscriber implements EventSubscriberInterface
     public static function getSubscribedEvents(): array
     {
         return[
-            'product.loaded' => 'onProductsLoaded'
+            ProductEvents::PRODUCT_LOADED_EVENT => 'onProductsLoaded'
         ];
     }
 
