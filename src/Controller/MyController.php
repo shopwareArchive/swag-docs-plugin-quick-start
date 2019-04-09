@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PluginQuickStart\Controller;
+namespace Swag\PluginQuickStart\Controller;
 
-use PluginQuickStart\Service\MyService;
+use Swag\PluginQuickStart\Service\MyService;
 use Shopware\Core\Framework\Context;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;

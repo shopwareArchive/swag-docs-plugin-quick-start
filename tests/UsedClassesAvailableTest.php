@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PluginQuickStart\Test;
+namespace Swag\PluginQuickStartTests;
 
 use Shopware\Core\Framework\Test\TestCaseBase\IntegrationTestBehaviour;
 use PHPUnit\Framework\TestCase;
@@ -10,9 +10,9 @@ class UsedClassesAvailableTest extends TestCase
 {
     use IntegrationTestBehaviour;
 
-    public function testClassesAreInstantiable()
+    public function testClassesAreInstantiable(): void
     {
-        $namespace = str_replace('\Test', '', __NAMESPACE__);
+        $namespace = str_replace('Tests', '', __NAMESPACE__);
 
         foreach ($this->getPluginClasses() as $class) {
             $classRelativePath = str_replace(['.php', '/'], ['', '\\'], $class->getRelativePathname());

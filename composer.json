@@ -2,7 +2,7 @@
     "name": "swag/plugin-quick-start",
     "description": "Plugin quick start plugin",
     "version": "v1.0.0",
-    "type": "shopware-plugin",
+    "type": "shopware-platform-plugin",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,7 @@
         "shopware/platform": "dev-master"
     },
     "extra": {
-        "installer-name": "PluginQuickStart",
+        "shopware-plugin-class": "Swag\\PluginQuickStart\\PluginQuickStart",
         "label": {
             "de_DE": "Beispiel Plugin",
             "en_GB": "Example Plugin"
@@ -21,6 +21,11 @@
         "description": {
             "de_DE": "Deutsche Beschreibung des Plugins",
             "en_GB": "English description of the plugin"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Swag\\PluginQuickStart\\": "src/"
         }
     }
 }

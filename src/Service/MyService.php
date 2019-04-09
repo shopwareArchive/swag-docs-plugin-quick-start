@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace PluginQuickStart\Service;
+namespace Swag\PluginQuickStart\Service;
 
 class MyService
 {

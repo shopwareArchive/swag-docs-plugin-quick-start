@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PluginQuickStart\Subscriber;
+namespace Swag\PluginQuickStart\Subscriber;
 
 use Shopware\Core\Content\Product\ProductEvents;
 use Shopware\Core\Framework\DataAbstractionLayer\Event\EntityLoadedEvent;
