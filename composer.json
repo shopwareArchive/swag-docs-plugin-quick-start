@@ -15,12 +15,12 @@
     "extra": {
         "shopware-plugin-class": "Swag\\PluginQuickStart\\PluginQuickStart",
         "label": {
-            "de-DE": "Beispiel Plugin",
-            "en-GB": "Example Plugin"
+            "de-DE": "Label für das Plugin PluginQuickStart",
+            "en-GB": "Label for the plugin PluginQuickStart"
         },
         "description": {
-            "de-DE": "Deutsche Beschreibung des Plugins",
-            "en-GB": "English description of the plugin"
+            "de-DE": "Beschreibung für das Plugin PluginQuickStart",
+            "en-GB": "Description for the plugin PluginQuickStart"
         }
     },
     "autoload": {
