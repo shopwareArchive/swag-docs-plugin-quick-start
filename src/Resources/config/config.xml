@@ -8,7 +8,7 @@
         <input-field>
             <name>example</name>
             <label>Example Label EN</label>
-            <label lang="de-DE">Beispiel aLabel DE</label>
+            <label lang="de-DE">Beispiel Label DE</label>
         </input-field>
     </card>
 </config>
