@@ -31,6 +31,7 @@ class MyController extends AbstractController
     public function myFirstApi(Request $request, Context $context): JsonResponse
     {
         $this->myService->doSomething();
+
         return new JsonResponse(['You successfully created your first controller route']);
     }
 }

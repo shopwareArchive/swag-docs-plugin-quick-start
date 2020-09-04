@@ -10,7 +10,7 @@ class MySubscriber implements EventSubscriberInterface
 {
     public static function getSubscribedEvents(): array
     {
-        return[
+        return [
             ProductEvents::PRODUCT_LOADED_EVENT => 'onProductsLoaded'
         ];
     }

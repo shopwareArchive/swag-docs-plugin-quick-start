@@ -20,6 +20,9 @@ class MyControllerTest extends TestCase
 
         /* @var Response $response */
         static::assertSame(Response::HTTP_OK, $response->getStatusCode());
-        static::assertSame('You successfully created your first controller route', \json_decode($response->getContent())[0]);
+        static::assertSame(
+            'You successfully created your first controller route',
+            \json_decode($response->getContent(), true)[0]
+        );
     }
 }
